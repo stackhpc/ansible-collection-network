@@ -1,0 +1,20 @@
+namespace: stackhpc
+name: network
+version: 1.0.0
+readme: README.md
+authors:
+  - StackHPC Ltd
+description: Ansible collection for interacting with OpenStack clouds
+license:
+  - Apache-2.0
+tags:
+  - cloud
+  - networking
+dependencies: {}
+repository: https://github.com/stackhpc/ansible-collection-network
+documentation: https://github.com/stackhpc/ansible-collection-network/branch/main/README.md
+homepage: https://github.com/stackhpc/ansible-collection-network
+issues: https://github.com/stackhpc/ansible-collection-network/issues
+build_ignore:
+  - "*.tar.gz"
+  - .gitignore
