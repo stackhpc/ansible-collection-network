@@ -1,0 +1,6 @@
+---
+- name: Test dell powerconnect switch
+  hosts: switches
+  connection: local
+  roles:
+    - dell_powerconnect_switch
