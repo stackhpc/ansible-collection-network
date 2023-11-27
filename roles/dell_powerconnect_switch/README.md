@@ -63,7 +63,7 @@ memory.
       hosts: dell-powerconnect-switches
       gather_facts: no
       roles:
-        - role: dell-powerconnect-switch
+        - role: stackhpc.network.dell_powerconnect_switch
           dell_powerconnect_switch_write_memory: yes
           dell_powerconnect_switch_provider:
             host: "{{ switch_host }}"
