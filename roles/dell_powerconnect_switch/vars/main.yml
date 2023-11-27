@@ -1,0 +1,12 @@
+---
+dell_powerconnect_main_prompt: "([Cc]onsole|{{ inventory_hostname }})#[\\s]?" # noqa: var-naming[no-role-prefix]
+dell_powerconnect_config_prompt: "([Cc]onsole|{{ inventory_hostname }})\\(config(-vlan)?\\)#[\\s]?" # noqa: var-naming[no-role-prefix]
+dell_powerconnect_interface_prompt: "([Cc]onsole|{{ inventory_hostname }})\\(config-if.*\\)#[\\s]?" # noqa: var-naming[no-role-prefix]
+dell_powerconnect_enable_prompt: "([Cc]onsole|{{ inventory_hostname }})>[\\s]?" # noqa: var-naming[no-role-prefix]
+
+dell_powerconnect_auth_responses: # noqa: var-naming[no-role-prefix]
+  "User Name:": "{{ dell_powerconnect_switch_provider.username }}"
+  "(?i).*Password:": "{{ dell_powerconnect_switch_provider.auth_pass }}"
+
+dell_powerconnect_write_responses: # noqa: var-naming[no-role-prefix]
+  "Overwrite file \\[startup\\-config\\] \\?\\[Yes\\/press any key for no\\]\\.\\.\\.\\.": "Y"
