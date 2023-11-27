@@ -1,0 +1,6 @@
+---
+- name: Test mellanox switch
+  hosts: switches
+  connection: local
+  roles:
+    - mellanox_switch

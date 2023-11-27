@@ -1,0 +1,8 @@
+---
+mellanox_enable_prompt: "{{ inventory_hostname }} \\[.*\\] > " # noqa: var-naming[no-role-prefix]
+mellanox_main_prompt: "{{ inventory_hostname }} \\[.*\\] # " # noqa: var-naming[no-role-prefix]
+mellanox_config_prompt: "{{ inventory_hostname }} \\[.*\\] \\(config( vlan [0-9\\,\\-]+)?\\) # " # noqa: var-naming[no-role-prefix]
+mellanox_interface_prompt: "{{ inventory_hostname }} \\[.*\\] \\(config interface .*\\) # " # noqa: var-naming[no-role-prefix]
+
+mellanox_auth_responses: # noqa: var-naming[no-role-prefix]
+  "Password:": "{{ mellanox_switch_provider.auth_pass }}"
