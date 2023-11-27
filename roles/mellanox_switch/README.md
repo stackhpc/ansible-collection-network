@@ -52,7 +52,7 @@ ethernet interfaces as access mode switchports.
       hosts: mellanox-switches
       gather_facts: no
       roles:
-        - role: stackhpc.mellanox-switch
+        - role: stackhpc.network.mellanox_switch
           mellanox_switch_provider:
             host: "{{ switch_host }}"
             username: "{{ switch_user }}"
