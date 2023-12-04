@@ -12,7 +12,7 @@ tags:
   - networking
 dependencies: {}
 repository: https://github.com/stackhpc/ansible-collection-network
-documentation: https://github.com/stackhpc/ansible-collection-network/branch/main/README.md
+documentation: https://github.com/stackhpc/ansible-collection-network/blob/main/README.md
 homepage: https://github.com/stackhpc/ansible-collection-network
 issues: https://github.com/stackhpc/ansible-collection-network/issues
 build_ignore:
